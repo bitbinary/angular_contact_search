@@ -25,7 +25,6 @@ export class AppComponent {
 
   //search for matching name or username
   searchValueChange = (event: any) => {
-    console.log(event.value);
     let tempList: any[] = [];
     this.users.forEach((element: Contact) => {
       if (
