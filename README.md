@@ -1,5 +1,6 @@
 # Contact Search App
 
+DEMO: <https://bitbinary.github.io/angular_contact_search/>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
 
 ## Development server
