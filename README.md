@@ -1,4 +1,4 @@
-# Test2
+# Contact Search App
 
 ## Running the file
 Extract the zip folder 
