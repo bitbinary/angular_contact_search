@@ -1,0 +1,76 @@
+<div class="contact-item">
+  <div class="section1" (click)="this.toggleDetails()">
+    <app-contact-thumbnail [name]="this.contact.name"></app-contact-thumbnail>
+    <div class="defaultDetails">
+      <!-- <p>id:{{ this.contact.id }}</p> -->
+      <p class="name">{{ this.contact.name }}</p>
+      <span class="userName">{{ this.contact.username }}</span>
+      <span class="phone">{{ this.contact.phone }}</span>
+      <p></p>
+    </div>
+  </div>
+
+  <div
+    class="details"
+    [ngStyle]="{ display: this.hideDetails ? 'None' : 'flex' }"
+  >
+    <table>
+      <tr>
+        <td class="label"><i class="fa fa-envelope"></i></td>
+        <td>: {{ this.contact.email }}</td>
+      </tr>
+      <tr>
+        <td class="label"><i class="fa fa-address-card"></i></td>
+        <td>
+          : suite {{ this.contact.address.suite }},{{
+            this.contact.address.street
+          }}
+          street
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label"><i class="fa fa-globe"></i></td>
+        <td>: {{ this.contact.website }}</td>
+      </tr>
+      <br />
+      <tr>
+        <td class="label"><i class="fa fa-building"></i></td>
+        <td>
+          <tr>
+            <span style="font-size: 12px; font-style: italic">(name)</span
+            >:
+            {{
+              this.contact.company.name
+            }}
+          </tr>
+
+          <tr style="font-style: italic">
+            <span style="font-size: 12px; font-style: italic">
+              (catchPhrase)</span
+            >:
+            {{
+              this.contact.company.catchPhrase
+            }}
+          </tr>
+          <tr>
+            <span style="font-size: 12px; font-style: italic"> (bs)</span
+            >:
+            {{
+              this.contact.company.bs
+            }}
+          </tr>
+        </td>
+      </tr>
+      <br />
+
+      <tr>
+        <td class="label"><i class="fa fa-map-marker"></i></td>
+        <td>
+          : [ {{ this.contact.address.geo.lat }},
+          {{ this.contact.address.geo.lng }} ]
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

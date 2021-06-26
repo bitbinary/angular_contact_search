@@ -1,0 +1,20 @@
+:host() {
+  aspect-ratio: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageThumbnail {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom-left-radius: 8px; */
+  /* border-top-left-radius: 8px; */
+  margin-right: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+}
